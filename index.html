@@ -14,11 +14,11 @@ and open the template in the editor.
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" hrf="penjat.css">
-            <script src="penjat.js"></script>
+        <script src="penjat.js" ></script>
     </head>
-    <body>
-style="background-image:url('img/desert.png');
-background-size:640px 480px;background-repeat: no-repeat;">
+    <body
+     style="background-image:url('img/desert.png');
+     background-size:640px 480px;background-repeat: no-repeat;">
         <div>Prototip Joc del Penjat</div>
 
         <input type="text" id="lletra" placeholder="escriu la lletra en minuscules">
@@ -48,14 +48,47 @@ background-size:640px 480px;background-repeat: no-repeat;">
         <div id="letras">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</div>
 
         <br><br>
-        <img src="img/ahorcado_0.png" alt=""/>
-        <img src="img/ahorcado_1.png" alt=""/>
-        <img src="img/ahorcado_2.png" alt=""/>
-        <img src="img/ahorcado_3.png" alt=""/>
-        <img src="img/ahorcado_4.png" alt=""/>
-        <img src="img/ahorcado_5.png" alt=""/>
-        <img src="img/ahorcado_6.png" alt=""/>
+        <img id="ahorcado"   src="img/ahorcado.jpg" style="width:280px;height:270px;" alt=""/>
+        <img id="ahorcado_0" src="img/ahorcado_0.png" style="width:280px;height:270px;" alt=""/>
+        <img id="ahorcado_1" src="img/ahorcado_1.png" style="width:280px;height:270px;" alt=""/>
+        <img id="ahorcado_2" src="img/ahorcado_2.png" style="width:280px;height:270px;" alt=""/>
+        <img id="ahorcado_3" src="img/ahorcado_3.png"style="width:280px;height:270px;" alt=""/>
+        <img id="ahorcado_4" src="img/ahorcado_4.png"style="width:280px;height:270px;" alt=""/>
+        <img id="ahorcado_5" src="img/ahorcado_5.png"style="width:280px;height:270px;" alt=""/>
+        <img id="ahorcado_6" src="img/ahorcado_6.png"style="width:280px;height:270px;" alt=""/>
         
+        <audio id="bell_toll">
+            <source  src="aud/bell_toll.mp3" type="audio/mpeg">
+        </audio>
+            <audio id="bell_toll_x3">
+                <source  src="aud/bell_toll_x3.mp3" type="audio/mpeg">
+             
+            </audio>
+            <audio id="boom_cloud">
+                <source src="aud/boom_cloud.mp3" type="audio/mpeg">
+                
+            </audio>
+            <audio id="cat-fight">
+                <source  src="aud/cat-fight.mp3" type="audio/mpeg">
+                
+            </audio>
+            <audio id="cheer">
+                <source  src="aud/cheer.mp3" type="audio/mpeg">
+                
+            </audio>
+            <audio id="clock_ticking">
+                <source  src="aud/clock_ticking.mp3" type="audio/mpeg">
+                
+            </audio>
+            <audio id="miau">
+                <source  src="aud/miau.mp3" type="audio/mpeg">
+                
+            </audio>
+       
+        <audio id="mystery">
+            <source  src="aud/mystery.mp3" type="audio/mpeg">
+            
+        </audio>
     </body>
 </html>
    
