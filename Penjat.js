@@ -11,11 +11,22 @@
         var palabro="";
 
         var letra="";
+        
+          // Lletra de paraules per al joc
+          var paraules = ["fetge","forca","jutges","jutjat","mengen","penjat","quinta","setze"];
+          // Escull una paaula aleatoriament 
+          var paraula = paraules[Math.floor(Math.random()*  paraules.length)];
+          var pos = paraula.indexOf(lletra);
+          var lletres = [];
+          for (var i = 0; i < paraula.length; i++) {
+            lletres[i] = "_";      
+          }
+          document.getElementById("palabro").innerHTML = lletres;
 
         function Verificar(){
 
 			var lletra= document.getElementById("lletra").value;
-
+                         var pos = paraula.indexOf(lletra);
 			if((lletra >= "m")) {
 
 				vidas= vidas-1;
@@ -42,4 +53,5 @@
 
 			}
 
+          
 		}
