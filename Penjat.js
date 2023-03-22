@@ -8,15 +8,20 @@
 
         var vidas= 7;
 
-        var palabro="";
 
-        var letra="";
+
+        var letra=["_", "_", "_","_", "_", "_","_",]
         
+        var punts=0;
           // Lletra de paraules per al joc
           var paraules = ["fetge","forca","jutges","jutjat","mengen","penjat","quinta","setze"];
+          var pistes =   ["A la quinta forca","A ca un penjat, no hi anomenis cordes" 
+              "Seteze jutges d'un jutjat mengen fetge d'un penjat"];
+          var paraulespistes = [1,2,0,2,2,2,1,0,2];
           // Escull una paaula aleatoriament 
-          var paraula = paraules[Math.floor(Math.random()*  paraules.length)];
-          var pos = paraula.indexOf(lletra);
+          var aleatori = Math.floor(Math.random() * paraules.length);
+          var paraula = paraules[aleatori];
+          var pista =  pistes[paraulapistes[aleatori]];
           var lletres = [];
           for (var i = 0; i < paraula.length; i++) {
             lletres[i] = "_";      
@@ -26,7 +31,7 @@
         function Verificar(){
 
 			var lletra= document.getElementById("lletra").value;
-                         var pos = paraula.indexOf(lletra);
+                        var pos = paraula.indexOf(lletra);
 			if((lletra >= "m")) {
 
 				vidas= vidas-1;
@@ -54,4 +59,10 @@
 			}
 
           
+		}
+                
+        function esconder(){
+            alert("hola");
+             document.getElementById("ahorcado").hidden = true;  
+             document.getElementById("ahorcado_0").hidden = true;  
 		}
