@@ -32,23 +32,27 @@
 
 			var lletra= document.getElementById("lletra").value;
                         var pos = paraula.indexOf(lletra);
-                                    alert("hola");
-			if((lletra >= "m")) {
+                        alert(paraula);
+			if((pos == -1)) {
+                                alert("has fallat");
 
+                                // letra=letra+" "+lletra;
+                                letra[7 - vidas]=lletra;
+				document.getElementById("letras").innerHTML=letra;
+                                
 				vidas= vidas-1;
-
 				document.getElementById("vidas").innerHTML=vidas;
 
-				letra=lletra+letra+"";
-
-				document.getElementById("letras").innerHTML=letra;
-
 			} else {
-
-				palabro=lletra+palabro+"";
-
+                                alert("has encertat");
+                                
+				// lletres=lletres+" "+lletra;
+                                for (var i = pos; i < paraula.length; i++){
+                                    if (paraula[i] == lletra){
+                                        lletres[i]=lletra;
+                                    }
+                                }
 				document.getElementById("palabro").innerHTML=lletres;
-
 			}
 
 			if ((vidas==0)){
