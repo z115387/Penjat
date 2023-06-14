@@ -15,13 +15,23 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Penjat.css">
         <script src="Penjat.js" ></script>
+        
+         <!--
+        Llibreries per a la càrrega de la bases de dades
+        -->
+        <script src="js/alasql.js"></script>
+        <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+        <script src="js/sql-wasm.js"></script>
+       
     </head>
-    <body onload="esconder()"
-     style="background-image:url('img/desert.png');
-     background-size:640px 480px;background-repeat: no-repeat;">
+    <body    
+        body onload="esconder()"
+     style="background-image:url('img/Desert.png');
+     background-size: 640px 480px; background-repeat: no-repeat;">
         <div>Prototip Joc del Penjat</div>
-
-        <input type="text" id="lletra" placeholder="escriu la lletra en minuscules">
+        
+    
+        <input type="text" id="lletra" placeholder="Escriu la lletra en minuscules">
 
         <button onclick="Verificar()">Comproba</button>
 
